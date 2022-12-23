@@ -13,12 +13,17 @@ struct ContactListView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Hello, World! ---")
+                List(contacts) { contact in
+                    NavigationLink(destination: ContactDetailsView(contact: contact)) {
+                        Text(contact.fullName)
+                    }
+                }
+                .listStyle(.plain)
             }
             .navigationTitle("Contacts")
         }
-    }
 
+    }
 }
 
 struct ContactListView_Previews: PreviewProvider {
