@@ -22,7 +22,7 @@ struct Person: Identifiable {
         var contacts: [Person] = []
 
         let names = DataStore.shared.names.shuffled()
-        let surnames = DataStore.shared.names.shuffled()
+        let surnames = DataStore.shared.surnames.shuffled()
         let emails = DataStore.shared.emails.shuffled()
         let phoneNumders = DataStore.shared.phoneNumbers.shuffled()
 
