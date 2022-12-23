@@ -13,6 +13,10 @@
 		6E0F22192955D193009A7995 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0F22182955D193009A7995 /* Preview Assets.xcassets */; };
 		6E0F22212955D1EC009A7995 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F22202955D1EC009A7995 /* Person.swift */; };
 		6E0F22232955D212009A7995 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F22222955D212009A7995 /* DataStore.swift */; };
+		6E0F222829560250009A7995 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F222729560250009A7995 /* ContactListView.swift */; };
+		6E0F222A29560268009A7995 /* ContactSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F222929560268009A7995 /* ContactSectionView.swift */; };
+		6E0F222C29560611009A7995 /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F222B29560611009A7995 /* ContactDetailsView.swift */; };
+		6E0F223029561FA8009A7995 /* PhoneAndEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F222F29561FA8009A7995 /* PhoneAndEmailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		6E0F22182955D193009A7995 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E0F22202955D1EC009A7995 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		6E0F22222955D212009A7995 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		6E0F222729560250009A7995 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		6E0F222929560268009A7995 /* ContactSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSectionView.swift; sourceTree = "<group>"; };
+		6E0F222B29560611009A7995 /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
+		6E0F222F29561FA8009A7995 /* PhoneAndEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAndEmailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,10 @@
 		6E0F22102955D192009A7995 /* ContactLIst (SwiftUI) */ = {
 			isa = PBXGroup;
 			children = (
-				6E0F22112955D192009A7995 /* ContactLIst__SwiftUI_App.swift */,
+				6E0F22262955D9D4009A7995 /* App */,
 				6E0F22242955D232009A7995 /* Services */,
 				6E0F22252955D23B009A7995 /* Models */,
 				6E0F221F2955D1D4009A7995 /* Views */,
-				6E0F22152955D193009A7995 /* Assets.xcassets */,
 				6E0F22172955D193009A7995 /* Preview Content */,
 			);
 			path = "ContactLIst (SwiftUI)";
@@ -77,6 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				6E0F22132955D192009A7995 /* ContentView.swift */,
+				6E0F222B29560611009A7995 /* ContactDetailsView.swift */,
+				6E0F222729560250009A7995 /* ContactListView.swift */,
+				6E0F222929560268009A7995 /* ContactSectionView.swift */,
+				6E0F222F29561FA8009A7995 /* PhoneAndEmailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +106,15 @@
 				6E0F22202955D1EC009A7995 /* Person.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		6E0F22262955D9D4009A7995 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6E0F22112955D192009A7995 /* ContactLIst__SwiftUI_App.swift */,
+				6E0F22152955D193009A7995 /* Assets.xcassets */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,8 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E0F222829560250009A7995 /* ContactListView.swift in Sources */,
 				6E0F22212955D1EC009A7995 /* Person.swift in Sources */,
+				6E0F223029561FA8009A7995 /* PhoneAndEmailView.swift in Sources */,
 				6E0F22232955D212009A7995 /* DataStore.swift in Sources */,
+				6E0F222C29560611009A7995 /* ContactDetailsView.swift in Sources */,
+				6E0F222A29560268009A7995 /* ContactSectionView.swift in Sources */,
 				6E0F22142955D192009A7995 /* ContentView.swift in Sources */,
 				6E0F22122955D192009A7995 /* ContactLIst__SwiftUI_App.swift in Sources */,
 			);

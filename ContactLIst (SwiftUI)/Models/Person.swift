@@ -7,11 +7,12 @@
 
 import Foundation
 
-struct Person {
+struct Person: Identifiable {
     let name: String
     let surname: String
     let email: String
     let phoneNumber: String
+    let id: String
 
     var fullName: String {
         "\(name) \(surname)"
@@ -32,15 +33,21 @@ struct Person {
             phoneNumders.count
         )
 
-        for index in 0...iteration {
+        for index in 0..<iteration {
             contacts.append(Person(
                 name: names[index],
                 surname: surnames[index],
                 email: emails[index],
-                phoneNumber: phoneNumders[index])
+                phoneNumber: phoneNumders[index],
+                id: UUID().uuidString
+            )
             )
         }
         return contacts
+    }
+
+    static func getContact() -> Person {
+        getContacts().shuffled()[0]
     }
 }
 
