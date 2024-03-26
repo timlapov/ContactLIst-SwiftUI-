@@ -16,7 +16,7 @@ class DataStore {
         "Alex",
         "Helen",
         "Joan",
-        "Marianna",
+        "Maria",
         "Tim",
         "Igor",
         "John"
@@ -32,7 +32,7 @@ class DataStore {
         "Carrefour",
         "Chikov(a)",
         "Leps",
-        "Boobsky"
+        "Noobsky"
     ]
 
     let emails = [
